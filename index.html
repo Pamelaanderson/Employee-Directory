@@ -5,42 +5,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Employee Directory</title>
-  <!--need to change and link font?-->
-
 </head>
 
 <body>
-<!--Main clearfix div-left around header-->
 
-<!--Header-->
-<header>
-  <!--img-->
-  <nav>
-     <!-- list: view, add, verify, update, delete-->
+  <div class="container fluid">
+    <div class="row">
+      <nav class="col-md-2">
+        <div class="navcontainer">
+        <i class="far fa-address-book" id="navpic"></i>
+        <ul>
+          <li class="navbuttons" id="view">VIEW</li>
+          <li class="navbuttons" id="add">ADD</li>
+          <li class="navbuttons" id="verify">VERIFY</li>
+          <li class="navbuttons" id="update">UPDATE</li>
+          <li class="navbuttons" id="delete">DELETE</li>
+        </ul>
+      </div>
+      </nav>
+      <div id="form" class="col-md-10 content">
+        <form>
+          <div class="enter">
+            <input id="name" class="search" placeholder="employee name" />
+            <div class="bonus">
+              <input id="office" class="search" placeholder="office number" />
+              <input id="phone" class="search" placeholder="phone number" />
+              </div>
+            <button id="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+        <div id="empList"></div>
+      </div>
+    </div>
+  </div>
+    
 
-  
- 
+    <script src="dom.js"></script>
+    <script src="employeeList.js"></script>
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
+  <!-- Bootstrap JavaScript CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-
-  </nav>
-</header>
-
-<!--Main container-right-->
-
-<!--Section or article div: searchbar, button, input, ect-->
-
-
-
-
-  <script src="dom.js"></script>
-  <script src="employeeList.js"></script>
-   <script src="app.js"></script>
- 
 </body>
 
 </html>
