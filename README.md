@@ -1,2 +1,2 @@
 # Employee-Directory
-For this assignment I will be building an online employee directory for a company
+An application to list and manage basic details of employees.
